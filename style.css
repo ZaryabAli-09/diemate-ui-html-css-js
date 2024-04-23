@@ -32,6 +32,7 @@ body {
   position: relative;
   max-width: 80%;
   margin-inline: auto;
+  /* overflow-x: hidden; */
 }
 
 nav {
@@ -39,6 +40,10 @@ nav {
   justify-content: space-between;
   margin-top: 10px;
   align-items: center;
+}
+nav img {
+  width: 50px;
+  display: none;
 }
 nav ul {
   display: flex;
@@ -161,8 +166,10 @@ nav ul li a:hover {
   letter-spacing: 1px;
   word-spacing: 4px;
   color: var(--primary-color);
+  text-align: center;
 }
 .upper h2 {
+  text-align: center;
   font-weight: bolder;
   font-size: 2rem;
   color: var(--secondary-color);
@@ -293,6 +300,7 @@ nav ul li a:hover {
 .card-second img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 .card-second h3 {
   color: white;
@@ -379,6 +387,7 @@ footer .right img {
   top: -120px;
   right: 160px;
 }
+
 .sub-footer {
   text-align: center;
   background-color: rgb(7, 60, 7);
